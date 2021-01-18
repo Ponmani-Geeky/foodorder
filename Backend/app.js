@@ -27,7 +27,7 @@ mongoose.connect(
     }
 );
 //port
-var port =process.env.PORT || 3000
+var port =process.env.PORT || 8080
 app.listen(port,()=>{
   console.log('server listening to port 3000');
 })
@@ -42,14 +42,14 @@ app.listen(port,()=>{
      try{
         console.log('post order fooddddd')
         const myfood=new Food(request.body);
+        console.log("myfoodd>>>>>>>>>>>",myfood.name)
         await myfood.save();
         response.send(myfood);
+        sendSms(myfood);
      }
      catch(err){
       response.send({message:err})
      }
-}).then(()=>{
-  sendSms();
 })
 
 async function sendSms(order){
@@ -63,7 +63,7 @@ async function sendSms(order){
 
  await client.messages.create({
       body: `New order from ${order.name},MoblieNo is ${order.mobileno}`,
-      to: process.env.YOUR_MOBILE_NO, // Text this number
+      to: "+919500244230", // Text this number
       from: "+16055196149", // From a valid Twilio number
     }).then((message) => console.log('successfully message send'))
   }
