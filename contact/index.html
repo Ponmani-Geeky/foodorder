@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../shared.css">
+    <link rel="stylesheet" href="main.css">  
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-head">
+            <a href="../mainpage/index.html">
+                Hotel Arthi
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav-items">
+                <li class="main-nav-item">
+                    <a href="../testimonial/index.html">Testimonal</a>
+                </li>
+                <li class="main-nav-item">
+                    <a href="index.html">ContactUs</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div>
+          <div class="planel-food">
+             <h1>Food?</h1>
+             <h2>Please fill below form and get details</h2>
+          </div>
+          <div class='food-detail'>
+              <div class='food-form'>
+                 <form action='' class="signup-form">
+                   <label for='name'>Name</label>
+                   <input  type='text' id='name' onfocus="focusbox(event)">
+                   <span><p id='nameerr'></p></span>
+                   <label for='Email'>Email Id</label>
+                   <input  type='text' id='Email' onfocus="focusbox(event)">
+                   <span><p id='mailerr'></p></span>
+                   <label for='mobile'>Mobile No</label>
+                   <input  type='text' id='mobile' onfocus="focusbox(event)">
+                   <span><p id='mobileerr'></p></span>
+                   <label for='function'>Function Type</label>
+                   <select class="functiontype">
+                       <option>Birthday Function</option>
+                       <option>Puberty Function</option>
+                       <option>Ear Piercing Function</option>
+                       <option>Other Function</option>
+                   </select>
+                   <button class="btn-submit" type="submit">Submit</button>
+                 </form>
+              </div>
+              <div class='food-image'>
+                <img src="../Images/health.jpg" alt="healthy foods" id="healthimg">
+              </div>
+          </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+         Eat Healthy! Stay Healthy!
+    </footer>
+    <script src='./index.js'></script>
+</body>
+</html>
