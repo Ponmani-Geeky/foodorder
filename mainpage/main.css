@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
+
+#mysilder{
+    margin-top: 50px;
+    margin-bottom:14px;
+    margin-right:10px;
+    margin-left: 8px;
+}
+
+.carousel-inner{
+    border-radius: 10px;
+    height: 237px;
+}
+
+.food-no{
+    width: auto;
+    height: 500px;
+    padding:10px;
+}
+
+.image-food{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+.process-food{
+    width:100%;
+    height:400px;
+    /* background-color: rgba(22, 157, 211, 1.0); */
+    background: linear-gradient(#2d5d85, #15abb6);
+    /* display: flex;
+    align-items: center; */
+}
+
+.del-food{
+    width: 100%;
+    height: 250px;
+}
+
+.delivery-food{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+.quote-food{
+    color:lavender;
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    font-family: 'Rubik', sans-serif;
+    text-shadow: 10px 10px 10px rgba(0,0,0,.5), 20px 20px 20px rgba(0,0,0,.4), 30px 30px 30px rgba(0,0,0,.1);
+}
+
+
+@media (min-width:600px){
+    .process-food{
+         display: flex;
+         justify-content: space-evenly;
+        align-items: center; 
+    }
+
+    .del-food{
+        width: 30%;
+        height: 390px;
+    }
+
+    .image-food{
+       width:100%;
+       height: 200px;
+       text-align: center;
+    }
+
+    #mysilder{
+        margin-top: 50px;
+        margin-bottom:14px;
+        margin-right:10px;
+        margin-left: 8px;
+    }
+
+    .carousel-inner{
+        border-radius: 10px;
+        height: 400px;
+    }
+}
