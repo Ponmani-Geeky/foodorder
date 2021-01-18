@@ -130,8 +130,12 @@ console.log('stringfyyyy',JSON.stringify(foodlist));
             foodform.style.display='none';
       let thank=document.createElement('h1');
       thank.innerHTML='ThankYou for ordering with us';
+      let callback=document.createElement('h3');
+      callback.innerHTML='we will callback shortly'
       thank.style.color='green';
+      callback.style.color='green';
       fooddiv.appendChild(thank);
+      fooddiv.appendChild(callback);
       fooddiv.style.marginTop='150px'
       fooddiv.style.textAlign='center';
       fooddiv.style.backgroundColor='white';
