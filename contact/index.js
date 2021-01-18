@@ -116,8 +116,8 @@ foodlist={
 }
 
 console.log('fooodddlist>>>>>>>>>>>>>>>>>>>>>>>>>>>',foodlist)
-//  dbupdate();
- placedorder();
+ dbupdate();
+//  placedorder();
 console.log('stringfyyyy',JSON.stringify(foodlist));
 }
 }
@@ -160,7 +160,7 @@ async function dbupdate(){
         },
         body: JSON.stringify(foodlist)
       }).then(response=>{
-        // placedorder();
+         placedorder();
         console.log('resultt>>>>>>>>>>>>', response.json());
       })
       
