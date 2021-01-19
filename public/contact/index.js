@@ -153,7 +153,7 @@ console.log('stringfyyyy',JSON.stringify(foodlist));
 
 
 async function dbupdate(){
-    let foodres = await fetch('https://arthishotel.heroku.com/foodapi/foodsorder', {
+    let foodres = await fetch('https://arthishotel.herokuapp.com/foodapi/foodsorder', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json;charset=utf-8'
