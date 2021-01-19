@@ -27,9 +27,9 @@ mongoose.connect(
     }
 );
 //port
-var port =process.env.PORT || 8080
+var port =process.env.PORT || 3000
 app.listen(port,()=>{
-  console.log('server listening to port 3000');
+  console.log('server listening to port',{port});
 })
 
 // app.get('/',(req,res)=>{
