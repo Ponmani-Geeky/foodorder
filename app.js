@@ -4,13 +4,44 @@ require('dotenv/config');
 const app=express();
 var cors=require('cors');
 var bodyparser=require('body-parser');
+var path=require('path');
 const { request, response } = require('express');
 var router=express.Router();
 const Food=require('./dbmodel')
 // app.use(express.json());
 
-var distDir = __dirname + "public/mainpage/";
-app.use(express.static(distDir));
+//staticfiles
+app.use(express.static('public'));
+// app.use('/mainpage',express.static(__dirname + 'public/mainpage'))
+// app.use('/testimonial',express.static(__dirname + 'public/testimonial'))
+// app.use('/contact',express.static(__dirname + 'public/contact'))
+// app.use('/images',express.static(__dirname + 'public/images'))
+
+
+//pages
+app.get('/',(req,res)=>{
+   res.sendFile(path.join(__dirname,'public/mainpage/index.html'))
+})
+
+app.get('/css',(req,res)=>{
+  res.sendFile(path.join(__dirname,'public/mainpage/main.css'))
+})
+
+app.get('/index.html',(req,res)=>{
+  res.sendFile(path.join(__dirname,'public/mainpage/index.html'))
+})
+
+app.get('/mainpage/index.html',(req,res)=>{
+  res.sendFile(path.join(__dirname,'public/mainpage/index.html'))
+})
+
+app.get('/testimonial/index.html',(req,res)=>{
+  res.sendFile(path.join(__dirname,'public/testimonial/index.html'))
+})
+
+app.get('/contact/index.html',(req,res)=>{
+  res.sendFile(path.join(__dirname,'public/contact/index.html'))
+})
 
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(bodyparser.json());
