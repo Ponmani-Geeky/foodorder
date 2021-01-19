@@ -44,7 +44,7 @@ main {
 
 .main-nav-items li {
   list-style: none;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 2px;
   align-self: flex-end;
