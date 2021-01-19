@@ -1,6 +1,5 @@
+
 .planel-food{
-    width:100vw;
-    max-width:100%;
     margin-top: 4rem;
     margin-bottom: 1rem;
     border: 5px solid black;
@@ -14,8 +13,6 @@
 
 
 .food-detail{
-    width: 100vw;
-    max-width:100%;
     background-color: rgb(17, 158, 223);
    
 }
@@ -28,6 +25,7 @@
 
 .food-image{
     width: 100%;
+    padding: 20px;
 }
 
 .signup-form{

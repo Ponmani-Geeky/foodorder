@@ -1,10 +1,10 @@
-/* @import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900'); */
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
 
 #mysilder{
     margin-top: 50px;
     margin-bottom:14px;
-    margin-right:10px;
-    margin-left: 8px;
+    margin-right:0px;
+    margin-left: -9px;
 }
 
 .carousel-inner{
@@ -13,7 +13,7 @@
 }
 
 .food-no{
-    width: auto;
+    width: 100%;
     height: 500px;
     padding:10px;
 }
@@ -25,7 +25,7 @@
 }
 
 .process-food{
-    width:100%;
+    max-width:100%;
     height:400px;
     /* background-color: rgba(22, 157, 211, 1.0); */
     background: linear-gradient(#2d5d85, #15abb6);
@@ -48,7 +48,7 @@
 .quote-food{
     color:lavender;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-style: italic;
     font-family: 'Rubik', sans-serif;
     text-shadow: 10px 10px 10px rgba(0,0,0,.5), 20px 20px 20px rgba(0,0,0,.4), 30px 30px 30px rgba(0,0,0,.1);
