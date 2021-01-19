@@ -8,6 +8,10 @@ const { request, response } = require('express');
 var router=express.Router();
 const Food=require('./dbmodel')
 // app.use(express.json());
+
+var distDir = __dirname + "public/mainpage/";
+app.use(express.static(distDir));
+
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(bodyparser.json());
 app.use(cors());
